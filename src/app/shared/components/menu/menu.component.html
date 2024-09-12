@@ -1,0 +1,16 @@
+<p-menubar  [model]="menuItems">
+  <ng-template pTemplate="start">
+
+
+  </ng-template>
+<ng-template pTemplate="end">
+
+  <div class="flex align-items-center gap-3">
+    <a routerLink="/" class="p-menuitem-link"  ><h2>{{ title }}</h2></a>
+    <img src="./favicon.ico" alt="Icono"  routerLink="/"   >
+  </div>
+
+
+</ng-template>
+
+</p-menubar>

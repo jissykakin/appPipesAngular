@@ -1,0 +1,187 @@
+
+<p-panel header="Pipes Básicos" class="field m-2">
+  <p>Pipes incluídos en Angular - Usualmente en el Common Module </p>
+</p-panel>
+
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="uppercase">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="lowercase">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="titlecase">
+     {{ fullName | titlecase}}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="DatePipe : Fecha y Horas">
+
+        <table class="table table-hover"  >
+          <thead>
+            <tr>
+              <th>Option DatePipe</th>
+              <th>Output Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>fecha | date: 'short' </td>
+              <td>{{ customDate | date: 'short' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'medium' </td>
+              <td>{{ customDate | date: 'medium' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'long' </td>
+              <td>{{ customDate | date: 'long' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'full' </td>
+              <td>{{ customDate | date: 'full' }} </td>
+            </tr>
+
+            <tr>
+              <td>fecha |<br> date:'long':'GMT-6' </td>
+              <td>{{ customDate | date: 'long':'GMT-6' }} </td>
+            </tr>
+            <tr>
+              <td>fecha |<br> date:'long':'GMT-5' </td>
+              <td>{{ customDate | date: 'long':'GMT-5' }} </td>
+            </tr>
+            <tr>
+              <td>fecha |<br> date:'long':'':'en-US' </td>
+              <td>{{ customDate | date: 'long':'':'en-US' }} </td>
+            </tr>
+            <tr>
+              <td>fecha |<br> date:'long':'GMT-6':'de-BE' </td>
+              <td>{{ customDate | date: 'long':'GMT-6':'de-BE' }} </td>
+            </tr>
+          </tbody>
+        </table>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="DatePipe : Fechas">
+
+        <table class="table table-hover"  >
+          <thead>
+            <tr>
+              <th>Option DatePipe</th>
+              <th>Output Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>fecha | date :</td>
+              <td>{{ customDate | date }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'shortDate' </td>
+              <td>{{ customDate | date: 'shortDate' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'mediumDate' </td>
+              <td>{{ customDate | date: 'mediumDate' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'longDate' </td>
+              <td>{{ customDate | date: 'longDate' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'fullDate' </td>
+              <td>{{ customDate | date: 'fullDate' }} </td>
+            </tr>
+
+
+            <tr>
+              <td>fecha | date: ' MMMM, dd, yyyy' </td>
+              <td>{{customDate | date :' MMMM, dd, yyyy' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'EEEE' </td>
+              <td>{{ customDate | date: 'EEEE' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'MMMM' </td>
+              <td>{{ customDate | date : 'MMMM' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'yyyy' </td>
+              <td>{{ customDate | date: 'yyyy' }} </td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+    </p-card>
+  </div>
+
+
+  <div class="col-12 md:col-4">
+    <p-card header="DatePipe: Horas">
+
+        <table class="table table-hover"  >
+          <thead>
+            <tr>
+              <th>Option DatePipe</th>
+              <th>Output Value</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>fecha | date:'shortTime' </td>
+              <td>{{ customDate | date:'shortTime' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date:'mediumTime' </td>
+              <td>{{ customDate | date:'mediumTime' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date:'longTime' </td>
+              <td>{{ customDate | date:'longTime' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date:'fullTime' </td>
+              <td>{{ customDate | date:'fullTime' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'hh:mm:ss' </td>
+              <td>{{ customDate | date: 'hh:mm:ss' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'hh' </td>
+              <td>{{ customDate | date: 'hh' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'mm' </td>
+              <td>{{ customDate | date: 'mm' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'ss' </td>
+              <td>{{ customDate | date: 'ss' }} </td>
+            </tr>
+            <tr>
+              <td>fecha | date: 'aaa' </td>
+              <td>{{ customDate | date:'aaa' }} </td>
+            </tr>
+
+          </tbody>
+        </table>
+    </p-card>
+  </div>
+
+</div>
